@@ -28,7 +28,9 @@
 // const arr2 = [0,2,5,false,6]
 // const all = arr1.concat(arr2)
 // const res = all.reduce((sum, item) => {
-//     sum += item
+//     if(typeof item === "number"){
+//         return sum += item
+//     }
 //     return sum
 // }, 0)
 // console.log(all);
@@ -83,7 +85,11 @@
 
 // 8-task
 // function findArr(gap){
-//     console.log(gap.split("").reverse().join(""));
-    
+//     if(typeof gap == "number"){
+//         console.log(gap.toString().split("").reverse().join(""));
+//     }
+//     else{
+//         console.log(gap.split("").reverse().join(""));
+//     }
 // }
-// findArr("salom")
+// findArr(123)
