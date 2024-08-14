@@ -4,40 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style type="text/tailwindcss">
-        @layer utilities {
-          .content-auto {
-            content-visibility: auto;
-          }
-        }
-    </style>
+    <link rel="stylesheet" href="./css/main.css">
+    
 </head>
 <body>
-
-
-
-    <ul class="w-[200px] h-[600px] bg-slate-600 mx-auto mt-[40px] rounded-[30px] flex flex-col justify-around">
-        <li id="card1" class="card1 w-[90%] h-[30%] bg-slate-300 mx-auto rounded-full "></li>
-        <li id="card2" class="card2 w-[90%] h-[30%] bg-slate-300 mx-auto rounded-full "></li>
-        <li id="card3" class="card3 w-[90%] h-[30%] bg-slate-300 mx-auto rounded-full "></li>
-    </ul>
-
-
-
-
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
-            }
-          }
-        }
-    </script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="./js/traffic.js"></script>
-    <!-- <script src="./js/main.js"></script> -->
+  <button onclick="handleClickBtn()">Click</button>
+  <h2 class="title"></h2>
+  <script src="./js/dom.js"></script>
+  <!-- <script src="./js/main.js"></script> -->
 </body>
 </html>
